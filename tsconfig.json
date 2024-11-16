@@ -1,0 +1,28 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules/*"
+  ],
+  "compilerOptions": {
+    "strictNullChecks":false,
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "svelte",
+      "jest"
+    ],
+    "lib": [
+      "ES2022",
+      "ES2022.String",
+      "dom"
+    ],
+    "paths": {
+      "src": [
+        "src/*"
+      ]
+    }
+  }
+}
